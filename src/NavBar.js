@@ -12,7 +12,7 @@ const NavBar = ({ query, setQuery, movies }) => {
         type="text"
         placeholder="Search movies..."
         value={query}
-        onChange={(e) => setQuery(e.target.value)}
+        onChange={(e) => setQuery(e.target.value)}  //=>controlled components
       />
       <p className="num-results">
         Found <strong>{movies.length}</strong> results
@@ -22,3 +22,5 @@ const NavBar = ({ query, setQuery, movies }) => {
 };
 
 export default NavBar;
+
+
